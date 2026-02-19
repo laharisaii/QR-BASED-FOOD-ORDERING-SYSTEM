@@ -1,0 +1,29 @@
+drop database foodordering;
+
+create database foodordering;
+use foodordering;
+
+create table register(username varchar(50) primary key,
+password varchar(50),
+contact_no varchar(15),
+email varchar(20),
+usertype varchar(50),
+address varchar(50));
+
+create table addchairs(username varchar(50),
+dining_room varchar(30),
+num_chairs varchar(20),
+description varchar(200));
+
+create table menu(username varchar(50),
+item_id int,
+item_name varchar(50),
+item_price double,
+picture varchar(40));
+
+
+create table bookorder(order_id int,
+customer_name varchar(50),
+item_id varchar(50),
+price varchar(20),
+order_date varchar(30));
